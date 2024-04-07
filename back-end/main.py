@@ -10,7 +10,7 @@ import trail as tr
 
 app = FastAPI()
 
-@app.get("/")
+@app.get("/customer")
 async def root():
     customer_test = customer.Customer(name='test', age=23, gender="men", experience="Beginner", location=location.Location(city="Vancouver", country="Canada"))
     city = customer_test.location.city
