@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		61184C4A2BC2406100B9ADFA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61184C492BC2406100B9ADFA /* SignInView.swift */; };
+		61184C4C2BC2428D00B9ADFA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61184C4B2BC2428D00B9ADFA /* AuthManager.swift */; };
+		61184C4E2BC2460000B9ADFA /* SignInApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61184C4D2BC2460000B9ADFA /* SignInApple.swift */; };
 		61DE3E3D2BC21E6B00E0044D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 61DE3E3C2BC21E6B00E0044D /* Auth */; };
 		61DE3E3F2BC21E6B00E0044D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 61DE3E3E2BC21E6B00E0044D /* Supabase */; };
-		61DE3E412BC21EAD00E0044D /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E402BC21EAD00E0044D /* Supabase.swift */; };
-		61DE3E432BC21FA200E0044D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E422BC21FA200E0044D /* AuthView.swift */; };
-		61DE3E462BC220D400E0044D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E452BC220D400E0044D /* ProfileView.swift */; };
-		61DE3E482BC221A800E0044D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E472BC221A800E0044D /* Models.swift */; };
 		61DE3E4A2BC221FB00E0044D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E492BC221FB00E0044D /* AppView.swift */; };
 		D0ABF7E92BC215CE00EA8016 /* arctrekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */; };
 		D0ABF7ED2BC215CF00EA8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ABF7EC2BC215CF00EA8016 /* Assets.xcassets */; };
@@ -40,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61DE3E402BC21EAD00E0044D /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
-		61DE3E422BC21FA200E0044D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		61184C492BC2406100B9ADFA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		61184C4B2BC2428D00B9ADFA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		61184C4D2BC2460000B9ADFA /* SignInApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInApple.swift; sourceTree = "<group>"; };
+		61184C4F2BC2599E00B9ADFA /* arctrek.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = arctrek.entitlements; sourceTree = "<group>"; };
 		61DE3E442BC2203600E0044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		61DE3E452BC220D400E0044D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		61DE3E472BC221A800E0044D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		61DE3E492BC221FB00E0044D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		D0ABF7E52BC215CE00EA8016 /* arctrek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arctrek.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arctrekApp.swift; sourceTree = "<group>"; };
@@ -107,15 +106,15 @@
 		D0ABF7E72BC215CE00EA8016 /* arctrek */ = {
 			isa = PBXGroup;
 			children = (
+				61184C4F2BC2599E00B9ADFA /* arctrek.entitlements */,
 				61DE3E442BC2203600E0044D /* Info.plist */,
 				D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */,
 				D0ABF7EC2BC215CF00EA8016 /* Assets.xcassets */,
 				D0ABF7EE2BC215CF00EA8016 /* Preview Content */,
-				61DE3E402BC21EAD00E0044D /* Supabase.swift */,
-				61DE3E422BC21FA200E0044D /* AuthView.swift */,
-				61DE3E452BC220D400E0044D /* ProfileView.swift */,
-				61DE3E472BC221A800E0044D /* Models.swift */,
 				61DE3E492BC221FB00E0044D /* AppView.swift */,
+				61184C492BC2406100B9ADFA /* SignInView.swift */,
+				61184C4B2BC2428D00B9ADFA /* AuthManager.swift */,
+				61184C4D2BC2460000B9ADFA /* SignInApple.swift */,
 			);
 			path = arctrek;
 			sourceTree = "<group>";
@@ -282,11 +281,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61DE3E412BC21EAD00E0044D /* Supabase.swift in Sources */,
-				61DE3E462BC220D400E0044D /* ProfileView.swift in Sources */,
+				61184C4E2BC2460000B9ADFA /* SignInApple.swift in Sources */,
+				61184C4A2BC2406100B9ADFA /* SignInView.swift in Sources */,
+				61184C4C2BC2428D00B9ADFA /* AuthManager.swift in Sources */,
 				61DE3E4A2BC221FB00E0044D /* AppView.swift in Sources */,
-				61DE3E482BC221A800E0044D /* Models.swift in Sources */,
-				61DE3E432BC21FA200E0044D /* AuthView.swift in Sources */,
 				D0ABF7E92BC215CE00EA8016 /* arctrekApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,9 +441,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = arctrek/arctrek.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"arctrek/Preview Content\"";
+				DEVELOPMENT_TEAM = F7RZUW839J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = arctrek/Info.plist;
@@ -472,9 +472,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = arctrek/arctrek.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"arctrek/Preview Content\"";
+				DEVELOPMENT_TEAM = F7RZUW839J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = arctrek/Info.plist;
