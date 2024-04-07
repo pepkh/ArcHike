@@ -1,0 +1,637 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61DE3E3D2BC21E6B00E0044D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 61DE3E3C2BC21E6B00E0044D /* Auth */; };
+		61DE3E3F2BC21E6B00E0044D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 61DE3E3E2BC21E6B00E0044D /* Supabase */; };
+		61DE3E412BC21EAD00E0044D /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E402BC21EAD00E0044D /* Supabase.swift */; };
+		61DE3E432BC21FA200E0044D /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E422BC21FA200E0044D /* AuthView.swift */; };
+		61DE3E462BC220D400E0044D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E452BC220D400E0044D /* ProfileView.swift */; };
+		61DE3E482BC221A800E0044D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E472BC221A800E0044D /* Models.swift */; };
+		61DE3E4A2BC221FB00E0044D /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E492BC221FB00E0044D /* AppView.swift */; };
+		D0ABF7E92BC215CE00EA8016 /* arctrekApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */; };
+		D0ABF7ED2BC215CF00EA8016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ABF7EC2BC215CF00EA8016 /* Assets.xcassets */; };
+		D0ABF7F02BC215CF00EA8016 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0ABF7EF2BC215CF00EA8016 /* Preview Assets.xcassets */; };
+		D0ABF7FA2BC215D000EA8016 /* arctrekTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABF7F92BC215D000EA8016 /* arctrekTests.swift */; };
+		D0ABF8042BC215D000EA8016 /* arctrekUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABF8032BC215D000EA8016 /* arctrekUITests.swift */; };
+		D0ABF8062BC215D000EA8016 /* arctrekUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0ABF8052BC215D000EA8016 /* arctrekUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D0ABF7F62BC215D000EA8016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0ABF7DD2BC215CE00EA8016 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0ABF7E42BC215CE00EA8016;
+			remoteInfo = arctrek;
+		};
+		D0ABF8002BC215D000EA8016 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D0ABF7DD2BC215CE00EA8016 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0ABF7E42BC215CE00EA8016;
+			remoteInfo = arctrek;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		61DE3E402BC21EAD00E0044D /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		61DE3E422BC21FA200E0044D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		61DE3E442BC2203600E0044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		61DE3E452BC220D400E0044D /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		61DE3E472BC221A800E0044D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		61DE3E492BC221FB00E0044D /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
+		D0ABF7E52BC215CE00EA8016 /* arctrek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arctrek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arctrekApp.swift; sourceTree = "<group>"; };
+		D0ABF7EC2BC215CF00EA8016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D0ABF7EF2BC215CF00EA8016 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D0ABF7F52BC215D000EA8016 /* arctrekTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arctrekTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0ABF7F92BC215D000EA8016 /* arctrekTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arctrekTests.swift; sourceTree = "<group>"; };
+		D0ABF7FF2BC215D000EA8016 /* arctrekUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arctrekUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0ABF8032BC215D000EA8016 /* arctrekUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arctrekUITests.swift; sourceTree = "<group>"; };
+		D0ABF8052BC215D000EA8016 /* arctrekUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = arctrekUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0ABF7E22BC215CE00EA8016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DE3E3F2BC21E6B00E0044D /* Supabase in Frameworks */,
+				61DE3E3D2BC21E6B00E0044D /* Auth in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ABF7F22BC215D000EA8016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ABF7FC2BC215D000EA8016 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0ABF7DC2BC215CE00EA8016 = {
+			isa = PBXGroup;
+			children = (
+				D0ABF7E72BC215CE00EA8016 /* arctrek */,
+				D0ABF7F82BC215D000EA8016 /* arctrekTests */,
+				D0ABF8022BC215D000EA8016 /* arctrekUITests */,
+				D0ABF7E62BC215CE00EA8016 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0ABF7E62BC215CE00EA8016 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0ABF7E52BC215CE00EA8016 /* arctrek.app */,
+				D0ABF7F52BC215D000EA8016 /* arctrekTests.xctest */,
+				D0ABF7FF2BC215D000EA8016 /* arctrekUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0ABF7E72BC215CE00EA8016 /* arctrek */ = {
+			isa = PBXGroup;
+			children = (
+				61DE3E442BC2203600E0044D /* Info.plist */,
+				D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */,
+				D0ABF7EC2BC215CF00EA8016 /* Assets.xcassets */,
+				D0ABF7EE2BC215CF00EA8016 /* Preview Content */,
+				61DE3E402BC21EAD00E0044D /* Supabase.swift */,
+				61DE3E422BC21FA200E0044D /* AuthView.swift */,
+				61DE3E452BC220D400E0044D /* ProfileView.swift */,
+				61DE3E472BC221A800E0044D /* Models.swift */,
+				61DE3E492BC221FB00E0044D /* AppView.swift */,
+			);
+			path = arctrek;
+			sourceTree = "<group>";
+		};
+		D0ABF7EE2BC215CF00EA8016 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D0ABF7EF2BC215CF00EA8016 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D0ABF7F82BC215D000EA8016 /* arctrekTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0ABF7F92BC215D000EA8016 /* arctrekTests.swift */,
+			);
+			path = arctrekTests;
+			sourceTree = "<group>";
+		};
+		D0ABF8022BC215D000EA8016 /* arctrekUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D0ABF8032BC215D000EA8016 /* arctrekUITests.swift */,
+				D0ABF8052BC215D000EA8016 /* arctrekUITestsLaunchTests.swift */,
+			);
+			path = arctrekUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0ABF7E42BC215CE00EA8016 /* arctrek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0ABF8092BC215D000EA8016 /* Build configuration list for PBXNativeTarget "arctrek" */;
+			buildPhases = (
+				D0ABF7E12BC215CE00EA8016 /* Sources */,
+				D0ABF7E22BC215CE00EA8016 /* Frameworks */,
+				D0ABF7E32BC215CE00EA8016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = arctrek;
+			packageProductDependencies = (
+				61DE3E3C2BC21E6B00E0044D /* Auth */,
+				61DE3E3E2BC21E6B00E0044D /* Supabase */,
+			);
+			productName = arctrek;
+			productReference = D0ABF7E52BC215CE00EA8016 /* arctrek.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D0ABF7F42BC215D000EA8016 /* arctrekTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0ABF80C2BC215D000EA8016 /* Build configuration list for PBXNativeTarget "arctrekTests" */;
+			buildPhases = (
+				D0ABF7F12BC215D000EA8016 /* Sources */,
+				D0ABF7F22BC215D000EA8016 /* Frameworks */,
+				D0ABF7F32BC215D000EA8016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0ABF7F72BC215D000EA8016 /* PBXTargetDependency */,
+			);
+			name = arctrekTests;
+			productName = arctrekTests;
+			productReference = D0ABF7F52BC215D000EA8016 /* arctrekTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D0ABF7FE2BC215D000EA8016 /* arctrekUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0ABF80F2BC215D000EA8016 /* Build configuration list for PBXNativeTarget "arctrekUITests" */;
+			buildPhases = (
+				D0ABF7FB2BC215D000EA8016 /* Sources */,
+				D0ABF7FC2BC215D000EA8016 /* Frameworks */,
+				D0ABF7FD2BC215D000EA8016 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D0ABF8012BC215D000EA8016 /* PBXTargetDependency */,
+			);
+			name = arctrekUITests;
+			productName = arctrekUITests;
+			productReference = D0ABF7FF2BC215D000EA8016 /* arctrekUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0ABF7DD2BC215CE00EA8016 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					D0ABF7E42BC215CE00EA8016 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					D0ABF7F42BC215D000EA8016 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D0ABF7E42BC215CE00EA8016;
+					};
+					D0ABF7FE2BC215D000EA8016 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = D0ABF7E42BC215CE00EA8016;
+					};
+				};
+			};
+			buildConfigurationList = D0ABF7E02BC215CE00EA8016 /* Build configuration list for PBXProject "arctrek" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0ABF7DC2BC215CE00EA8016;
+			packageReferences = (
+				61DE3E3B2BC21E6B00E0044D /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
+			productRefGroup = D0ABF7E62BC215CE00EA8016 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0ABF7E42BC215CE00EA8016 /* arctrek */,
+				D0ABF7F42BC215D000EA8016 /* arctrekTests */,
+				D0ABF7FE2BC215D000EA8016 /* arctrekUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0ABF7E32BC215CE00EA8016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ABF7F02BC215CF00EA8016 /* Preview Assets.xcassets in Resources */,
+				D0ABF7ED2BC215CF00EA8016 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ABF7F32BC215D000EA8016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ABF7FD2BC215D000EA8016 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0ABF7E12BC215CE00EA8016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61DE3E412BC21EAD00E0044D /* Supabase.swift in Sources */,
+				61DE3E462BC220D400E0044D /* ProfileView.swift in Sources */,
+				61DE3E4A2BC221FB00E0044D /* AppView.swift in Sources */,
+				61DE3E482BC221A800E0044D /* Models.swift in Sources */,
+				61DE3E432BC21FA200E0044D /* AuthView.swift in Sources */,
+				D0ABF7E92BC215CE00EA8016 /* arctrekApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ABF7F12BC215D000EA8016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ABF7FA2BC215D000EA8016 /* arctrekTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0ABF7FB2BC215D000EA8016 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0ABF8042BC215D000EA8016 /* arctrekUITests.swift in Sources */,
+				D0ABF8062BC215D000EA8016 /* arctrekUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D0ABF7F72BC215D000EA8016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0ABF7E42BC215CE00EA8016 /* arctrek */;
+			targetProxy = D0ABF7F62BC215D000EA8016 /* PBXContainerItemProxy */;
+		};
+		D0ABF8012BC215D000EA8016 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0ABF7E42BC215CE00EA8016 /* arctrek */;
+			targetProxy = D0ABF8002BC215D000EA8016 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D0ABF8072BC215D000EA8016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D0ABF8082BC215D000EA8016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0ABF80A2BC215D000EA8016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"arctrek/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arctrek/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youCode.arctrek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D0ABF80B2BC215D000EA8016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"arctrek/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = arctrek/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youCode.arctrek;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D0ABF80D2BC215D000EA8016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youCode.arctrekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arctrek.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/arctrek";
+			};
+			name = Debug;
+		};
+		D0ABF80E2BC215D000EA8016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youCode.arctrekTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arctrek.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/arctrek";
+			};
+			name = Release;
+		};
+		D0ABF8102BC215D000EA8016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youCode.arctrekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = arctrek;
+			};
+			name = Debug;
+		};
+		D0ABF8112BC215D000EA8016 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = youCode.arctrekUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = arctrek;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0ABF7E02BC215CE00EA8016 /* Build configuration list for PBXProject "arctrek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ABF8072BC215D000EA8016 /* Debug */,
+				D0ABF8082BC215D000EA8016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0ABF8092BC215D000EA8016 /* Build configuration list for PBXNativeTarget "arctrek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ABF80A2BC215D000EA8016 /* Debug */,
+				D0ABF80B2BC215D000EA8016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0ABF80C2BC215D000EA8016 /* Build configuration list for PBXNativeTarget "arctrekTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ABF80D2BC215D000EA8016 /* Debug */,
+				D0ABF80E2BC215D000EA8016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0ABF80F2BC215D000EA8016 /* Build configuration list for PBXNativeTarget "arctrekUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0ABF8102BC215D000EA8016 /* Debug */,
+				D0ABF8112BC215D000EA8016 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61DE3E3B2BC21E6B00E0044D /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61DE3E3C2BC21E6B00E0044D /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DE3E3B2BC21E6B00E0044D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		61DE3E3E2BC21E6B00E0044D /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61DE3E3B2BC21E6B00E0044D /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D0ABF7DD2BC215CE00EA8016 /* Project object */;
+}
