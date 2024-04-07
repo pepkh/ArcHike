@@ -13,7 +13,7 @@ async def root():
     city = customer_test.location.city
     country = customer_test.location.country
     weather = openweather.get_weather(city=city, country=country)
-    print(weather["description"])
+    print(weather["temperature"])
 
     return {"message": "Hello World"}
 
