@@ -19,18 +19,19 @@ payload = {
     'client_id': ID,
     'client_secret': SECRET,
     'refresh_token': REFRESH_T,
+    'access_token': ACCESS,
     'grant_type': "refresh_token",
     'f': 'json'
 }
 
-print("Requesting Token...\n")
+#print("Requesting Token...\n")
 res = requests.post(auth_url, data=payload, verify=False)
 access_token = res.json()['access_token']
-print("Access Token = {}\n".format(access_token))
+#print("Access Token = {}\n".format(access_token))
 
 header = {'Authorization': 'Bearer ' + access_token}
 param = {'per_page': 200, 'page': 1}
 my_dataset = requests.get(activites_url, headers=header, params=param).json()
 
-print(my_dataset[0]["name"])
-print(my_dataset[0]["map"]["summary_polyline"])
+#
+print(my_dataset)
