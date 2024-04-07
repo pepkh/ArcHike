@@ -34,6 +34,7 @@ async def request(item: customer.Customer):
     products = gr.search_arc_teryx_products(gender=gender, weather=weather["description"])
     
     jackets = tr.find_trail(experience=experience)
+    print(products.data)
     return {"products": products.data, "jackets":jackets.data}
 
 
