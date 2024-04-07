@@ -5,5 +5,5 @@ class Customer(BaseModel):
     name: str
     age: int
     gender: str
-    experience: bool
+    experience: str
     location: location.Location

@@ -3,6 +3,20 @@ import openweather as op
 import supabase as sp
 import json
 
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+SP_URL = os.getenv('SP_URL')
+SP_API_KEY = os.getenv('SP_KEY')
+
+url = SP_URL
+api_key = SP_API_KEY
+
+# Initialize Supabase client
+sp_client: sp.Client = sp.create_client(url, api_key)
+
 class Trail(BaseModel):
     name: str
     difficulty: str
@@ -11,46 +25,22 @@ class Trail(BaseModel):
     time: int
     pet: bool
     region: str
+    
+sp_client = sp.Client(url, api_key)
 
-def filter_experience(experience):
+def find_trail(experience):
     if experience == "Beginner":
-        return "Very Easy"
+        difficulty = "Very Easy"
     elif experience == "Experienced":
-        return "Easy"
+        difficulty = "Easy"
     elif experience == "Advanced":
-        return "Moderate"
+        difficulty = "Moderate"
     elif experience == "Crazy":
-        return "Difficult"
+        difficulty = "Difficult"
+    else:
+        difficulty = ""
     
-sp_url = ''
-sp_key = ''
-sp_client = sp.Client(sp_url, sp_key)
-with open('keywords.json') as f:
-    keywords_data = json.load(f)
+    response = sp_client.table('trails').select("*").eq('difficulty', difficulty).execute()
+    return response
 
-def find_trail(difficulty):
-
-    if "Very Easy" == 
-        weather_keywords = keywords_data.get("sunny_weather_keywords", [])
-    elif "rainy" in weather or "rain" in weather or "cloud" in weather:
-        weather_keywords = keywords_data.get("rainy_weather_keywords", [])
-    else: 
-        weather_keywords = []
-
-    # Construct the SQL query with dynamic conditions for keywords
-    conditions = []
-    for keyword in weather_keywords:
-        conditions.append(f"description LIKE '%{keyword}%'")
-    
-    # Join the conditions with OR operator
-    keyword_condition = " OR ".join(conditions)
-
-    # Construct the final query
-    query = f"""
-        SELECT * FROM products
-        WHERE gender = '{gender}' 
-        AND ({keyword_condition})
-        AND activity = '{activity}'
-    """
-    response = supabase_client.query(query)
     
