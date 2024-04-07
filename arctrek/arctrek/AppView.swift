@@ -7,7 +7,7 @@ struct AppView: View {
 
 
   var body: some View {
-      SignInView()
+      SignInView(appUser: .constant(.init(uid: "1234", email: nil)))
       
   }
 }
