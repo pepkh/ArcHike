@@ -21,6 +21,7 @@ struct AuthView: View {
           .frame(width: 280, height: 230)
           .aspectRatio(contentMode: .fill)
           .position(x: 200, y: 270)
+      
       VStack{
           VStack {
               Form {
@@ -30,25 +31,29 @@ struct AuthView: View {
                     .textInputAutocapitalization(.never)
                     .autocorrectionDisabled()
                 } .listRowBackground(color1)
-                      .foregroundColor(.white)
 
                 Section {
                   Button("Sign in") {
                     signInButtonTapped()
                   }.multilineTextAlignment(.center)
-                }.listRowBackground(Color.black)
-                  
-                if let result {
-                  Section {
-                    switch result {
-                    case .success:
-                      Text("Check your inbox.")
-                    case .failure(let error):
-                      Text(error.localizedDescription).foregroundStyle(.red)
+                    if isLoading {
+                        ProgressView()
                     }
-                  }
-                }
-              }.foregroundColor(.white)
+                    if let result {
+                      Section {
+                        switch result {
+                        case .success:
+                          Text("Check your inbox.")
+                        case .failure(_):
+                          Text("Please enter an email").foregroundStyle(.red)
+                        }
+                      }
+                    }
+                }.listRowBackground(color1)
+                  
+                
+              }.foregroundColor(.black)
+                  .position(x: 200, y: 270)
 
               .scrollContentBackground(.hidden)
               .onOpenURL(perform: { url in
@@ -60,10 +65,11 @@ struct AuthView: View {
                   }
                 }
               })
-          }.frame(width: 350, height: 200, alignment: .center)
+          }
 
       }.frame(maxWidth: .infinity, maxHeight: .infinity)
           .ignoresSafeArea(.all)
+          .edgesIgnoringSafeArea(.all)
       
       
     
