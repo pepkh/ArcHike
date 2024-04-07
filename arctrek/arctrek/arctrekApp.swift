@@ -6,13 +6,17 @@
 //
 
 import SwiftUI
+import GoogleSignIn
 
 @main
 struct arctrekApp: App {
     var body: some Scene {
         WindowGroup {
-            AppView()
-
+          AppView()
+            // ...
+                .onOpenURL { url in
+                  GIDSignIn.sharedInstance.handle(url)
+                }
         }
-    }
+      }
 }
