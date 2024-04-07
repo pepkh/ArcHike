@@ -18,7 +18,7 @@ struct AppView: View {
       if isAuthenticated {
         ProfileView()
       } else {
-        AuthView()
+        SignInView()
       }
     } // reaches out to supabase authentication and listens to change
     .task {
