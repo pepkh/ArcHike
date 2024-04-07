@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		610F2EF22BC2842A00E58EA4 /* mountain.png in Resources */ = {isa = PBXBuildFile; fileRef = 610F2EF12BC2842A00E58EA4 /* mountain.png */; };
+		610F2EF62BC28FAA00E58EA4 /* arctrek.png in Resources */ = {isa = PBXBuildFile; fileRef = 610F2EF52BC28FAA00E58EA4 /* arctrek.png */; };
+		61184C5E2BC2808100B9ADFA /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61184C5D2BC2808100B9ADFA /* SignInView.swift */; };
 		61DE3E3D2BC21E6B00E0044D /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 61DE3E3C2BC21E6B00E0044D /* Auth */; };
 		61DE3E3F2BC21E6B00E0044D /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 61DE3E3E2BC21E6B00E0044D /* Supabase */; };
 		61DE3E412BC21EAD00E0044D /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DE3E402BC21EAD00E0044D /* Supabase.swift */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		610F2EF12BC2842A00E58EA4 /* mountain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mountain.png; sourceTree = "<group>"; };
+		610F2EF52BC28FAA00E58EA4 /* arctrek.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = arctrek.png; path = ../../../arctrek.png; sourceTree = "<group>"; };
+		61184C5D2BC2808100B9ADFA /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		61DE3E402BC21EAD00E0044D /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		61DE3E422BC21FA200E0044D /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		61DE3E442BC2203600E0044D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -110,12 +116,15 @@
 				61DE3E442BC2203600E0044D /* Info.plist */,
 				D0ABF7E82BC215CE00EA8016 /* arctrekApp.swift */,
 				D0ABF7EC2BC215CF00EA8016 /* Assets.xcassets */,
+				610F2EF52BC28FAA00E58EA4 /* arctrek.png */,
+				610F2EF12BC2842A00E58EA4 /* mountain.png */,
 				D0ABF7EE2BC215CF00EA8016 /* Preview Content */,
 				61DE3E402BC21EAD00E0044D /* Supabase.swift */,
 				61DE3E422BC21FA200E0044D /* AuthView.swift */,
 				61DE3E452BC220D400E0044D /* ProfileView.swift */,
 				61DE3E472BC221A800E0044D /* Models.swift */,
 				61DE3E492BC221FB00E0044D /* AppView.swift */,
+				61184C5D2BC2808100B9ADFA /* SignInView.swift */,
 			);
 			path = arctrek;
 			sourceTree = "<group>";
@@ -256,7 +265,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				610F2EF22BC2842A00E58EA4 /* mountain.png in Resources */,
 				D0ABF7F02BC215CF00EA8016 /* Preview Assets.xcassets in Resources */,
+				610F2EF62BC28FAA00E58EA4 /* arctrek.png in Resources */,
 				D0ABF7ED2BC215CF00EA8016 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				61DE3E412BC21EAD00E0044D /* Supabase.swift in Sources */,
+				61184C5E2BC2808100B9ADFA /* SignInView.swift in Sources */,
 				61DE3E462BC220D400E0044D /* ProfileView.swift in Sources */,
 				61DE3E4A2BC221FB00E0044D /* AppView.swift in Sources */,
 				61DE3E482BC221A800E0044D /* Models.swift in Sources */,
