@@ -23,6 +23,7 @@ struct AppView: View {
     } // reaches out to supabase authentication and listens to change
     .task {
       for await state in await supabase.auth.authStateChanges {
+          
         if [.initialSession, .signedIn, .signedOut].contains(state.event) {
           isAuthenticated = state.session != nil
         }
