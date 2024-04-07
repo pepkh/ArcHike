@@ -15,45 +15,58 @@ struct AuthView: View {
   @State var result: Result<Void, Error>?
 
   var body: some View {
-    Form {
-      Section {
-        TextField("Email", text: $email)
-          .textContentType(.emailAddress)
-          .textInputAutocapitalization(.never)
-          .autocorrectionDisabled()
-      }
+      let color1 = hex(hex: "#D9D9D9")
+      Image("arctrek")
+          .resizable()
+          .frame(width: 280, height: 230)
+          .aspectRatio(contentMode: .fill)
+          .position(x: 200, y: 270)
+      VStack{
+          VStack {
+              Form {
+                Section {
+                  TextField("Email", text: $email)
+                    .textContentType(.emailAddress)
+                    .textInputAutocapitalization(.never)
+                    .autocorrectionDisabled()
+                } .listRowBackground(color1)
+                      .foregroundColor(.white)
 
-      Section {
-        Button("Sign in") {
-          signInButtonTapped()
-        }
+                Section {
+                  Button("Sign in") {
+                    signInButtonTapped()
+                  }.multilineTextAlignment(.center)
+                }.listRowBackground(Color.black)
+                  
+                if let result {
+                  Section {
+                    switch result {
+                    case .success:
+                      Text("Check your inbox.")
+                    case .failure(let error):
+                      Text(error.localizedDescription).foregroundStyle(.red)
+                    }
+                  }
+                }
+              }.foregroundColor(.white)
 
-        if isLoading {
-          ProgressView()
-        }
-      }
+              .scrollContentBackground(.hidden)
+              .onOpenURL(perform: { url in
+                Task {
+                  do {
+                    try await supabase.auth.session(from: url)
+                  } catch {
+                    self.result = .failure(error)
+                  }
+                }
+              })
+          }.frame(width: 350, height: 200, alignment: .center)
 
-      if let result {
-        Section {
-          switch result {
-          case .success:
-            Text("Check your inbox.")
-          case .failure(let error):
-            Text(error.localizedDescription).foregroundStyle(.red)
-          }
-        }
-      }
-    }
-      // this will create a session from the sent url
-    .onOpenURL(perform: { url in
-      Task {
-        do {
-          try await supabase.auth.session(from: url)
-        } catch {
-          self.result = .failure(error)
-        }
-      }
-    })
+      }.frame(maxWidth: .infinity, maxHeight: .infinity)
+          .ignoresSafeArea(.all)
+      
+      
+    
   }
 
   func signInButtonTapped() { // reaches to supabase
@@ -75,3 +88,26 @@ struct AuthView: View {
     }
   }
 }
+
+func hex (hex:String) -> Color {
+    var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+
+    if (cString.hasPrefix("#")) {
+        cString.remove(at: cString.startIndex)
+    }
+
+    if ((cString.count) != 6) {
+        return Color.gray
+    }
+
+    var rgbValue:UInt64 = 0
+    Scanner(string: cString).scanHexInt64(&rgbValue)
+
+    return Color(
+        red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+        green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+        blue: CGFloat(rgbValue & 0x0000FF) / 255.0
+        
+    )
+}
+
