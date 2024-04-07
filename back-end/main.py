@@ -24,13 +24,17 @@ class Item(BaseModel):
 # experience = customer_test.experience
 
 @app.post("/customer")
-async def root(item: Item):
-    # products = gr.search_arc_teryx_products(gender=gender, weather=weather["description"])
-    # print(products)
+async def request(item: customer.Customer):
+    city = item.location.city
+    country = item.location.country
+    gender = item.gender
+    weather = openweather.get_weather(city=city, country=country)
+    experience = item.experience
 
-    # trails = tr.find_trail(experience=experience)
-    # print(trails)
-    return {"message": "Hello World 1"}
+    products = gr.search_arc_teryx_products(gender=gender, weather=weather["description"])
+    
+    jackets = tr.find_trail(experience=experience)
+    return {"products": products.data, "jackets":jackets.data}
 
 
 
